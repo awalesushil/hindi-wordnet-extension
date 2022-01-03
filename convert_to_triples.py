@@ -48,14 +48,14 @@ def convert_to_triples(wordnet):
     for synset_id, synset in wordnet.items():
         for other_synset_id, relation_id in synset['relation_with'].items():
             try:
-                triples.append((synset_id, '_' + relation_mapper(relation_id), other_synset_id))
+                triples.append((synset['head_word'], '_' + relation_mapper(relation_id), wordnet[other_synset_id]['head_word']))
             except KeyError:
                 print("Synset " + other_synset_id + " not found. Skipping...")
     return triples
 
 
 def write_to_file(data, filename):
-    path = "data/filtered/" # or non-filtered
+    path = "data/text/" # or non-filtered
     with open(path+filename,"w+", encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(data)
