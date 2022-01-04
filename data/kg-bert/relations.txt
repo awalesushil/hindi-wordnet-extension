@@ -1,0 +1,16 @@
+_meronym
+_antonym
+_troponym
+_derived_from
+_attributes
+_verb
+_conjunction
+_onto_nodes
+_modifies_noun
+_also_see
+_compound
+_gradation
+_causative
+_entailment
+_similar
+_hypernym
