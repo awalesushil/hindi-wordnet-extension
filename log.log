@@ -1,0 +1,99 @@
+CUDA_VISIBLE_DEVICES=7 python3 train_transe_HIWN.py 
+
+Input Files Path : ./benchmarks/HIWN/
+The toolkit is importing datasets.
+The total of relations is 16.
+The total of entities is 39691.
+The total of train triples is 94498.
+Input Files Path : ./benchmarks/HIWN/
+The total of test triples is 944.
+The total of valid triples is 945.
+Finish initializing...
+Epoch 999 | loss: 0.054855: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [13:04<00:00,  1.27it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 944/944 [00:02<00:00, 330.37it/s]
+no type constraint results:
+metric:			    MRR 		 MR 		    hit@10 	    hit@3  	    hit@1 
+l(raw):			    0.003627 	 5122.805176 	 0.007415 	 0.003178 	 0.000000 
+r(raw):			    0.288676 	 711.513794 	 0.647246 	 0.448093 	 0.081568 
+averaged(raw):	    0.146151 	 2917.159424 	 0.327330 	 0.225636 	 0.040784 
+
+l(filter):		    0.026162 	 3982.166260 	 0.050847 	 0.025424 	 0.008475 
+r(filter):		    0.323117 	 711.231995 	 0.651483 	 0.479873 	 0.122881 
+averaged(filter):	 0.174639 	 2346.699219 	 0.351165 	 0.252648 	 0.065678 
+0.351165
+0.3511652648448944
+
+CUDA_VISIBLE_DEVICES=7 python3 train_transh_HIWN.py
+
+Input Files Path : ./benchmarks/HIWN/
+The toolkit is importing datasets.
+The total of relations is 16.
+The total of entities is 39691.
+The total of train triples is 94498.
+Input Files Path : ./benchmarks/HIWN/
+The total of test triples is 944.
+The total of valid triples is 945.
+Finish initializing...
+Epoch 999 | loss: 0.026845: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1000/1000 [19:39<00:00,  1.18s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 944/944 [00:04<00:00, 233.42it/s]
+no type constraint results:
+metric:			 MRR 		 MR 		 hit@10 	 hit@3  	 hit@1 
+l(raw):			 0.002590 	 6728.496582 	 0.006356 	 0.001059 	 0.000000 
+r(raw):			 0.240437 	 1000.100647 	 0.610169 	 0.388771 	 0.033898 
+averaged(raw):		 0.121514 	 3864.298584 	 0.308263 	 0.194915 	 0.016949 
+
+l(filter):		 0.018818 	 5586.023438 	 0.048729 	 0.013771 	 0.005297 
+r(filter):		 0.267829 	 999.817810 	 0.619703 	 0.421610 	 0.057203 
+averaged(filter):	 0.143323 	 3292.920654 	 0.334216 	 0.217691 	 0.031250 
+0.334216
+0.3342161178588867
+
+CUDA_VISIBLE_DEVICES=7 python3 train_complex_HIWN.py 
+
+Input Files Path : ./benchmarks/HIWN/
+The toolkit is importing datasets.
+The total of relations is 16.
+The total of entities is 39691.
+The total of train triples is 94498.
+Input Files Path : ./benchmarks/HIWN/
+The total of test triples is 944.
+The total of valid triples is 945.
+Finish initializing...
+Epoch 1999 | loss: 3.418996: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2000/2000 [55:57<00:00,  1.68s/it]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 944/944 [00:05<00:00, 182.93it/s]
+no type constraint results:
+metric:			 MRR 		 MR 		 hit@10 	 hit@3  	 hit@1 
+l(raw):			 0.001560 	 6029.313477 	 0.001059 	 0.000000 	 0.000000 
+r(raw):			 0.354835 	 1373.413086 	 0.522246 	 0.413136 	 0.254237 
+averaged(raw):		 0.178197 	 3701.363281 	 0.261653 	 0.206568 	 0.127119 
+
+l(filter):		 0.004031 	 4936.106934 	 0.008475 	 0.001059 	 0.000000 
+r(filter):		 0.399835 	 1373.155762 	 0.525424 	 0.427966 	 0.325212 
+averaged(filter):	 0.201933 	 3154.631348 	 0.266949 	 0.214513 	 0.162606 
+0.266949
+0.2669491469860077
+
+
+CUDA_VISIBLE_DEVICES=7 python3 train_distmult_HIWN.py 
+Input Files Path : ./benchmarks/HIWN/
+The toolkit is importing datasets.
+The total of relations is 16.
+The total of entities is 39691.
+The total of train triples is 94498.
+Input Files Path : ./benchmarks/HIWN/
+The total of test triples is 944.
+The total of valid triples is 945.
+Finish initializing...
+Epoch 1999 | loss: 6.762368: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2000/2000 [30:40<00:00,  1.09it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 944/944 [00:02<00:00, 433.43it/s]
+no type constraint results:
+metric:			 MRR 		 MR 		 hit@10 	 hit@3  	 hit@1 
+l(raw):			 0.001194 	 5707.091309 	 0.001059 	 0.000000 	 0.000000 
+r(raw):			 0.337404 	 769.807190 	 0.510593 	 0.404661 	 0.229873 
+averaged(raw):		 0.169299 	 3238.449219 	 0.255826 	 0.202331 	 0.114936 
+
+l(filter):		 0.001677 	 4649.096191 	 0.001059 	 0.000000 	 0.000000 
+r(filter):		 0.371298 	 769.568848 	 0.511653 	 0.416314 	 0.282839 
+averaged(filter):	 0.186488 	 2709.332520 	 0.256356 	 0.208157 	 0.141419 
+0.256356
+0.2563559114933014
