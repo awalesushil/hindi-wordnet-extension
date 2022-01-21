@@ -6,13 +6,13 @@ import csv
 
 
 def write_to_file(data, filename):
-    path = "data/non-filtered/" # or non-filtered
+    path = "data/filtered/" # or non-filtered
     with open(path+filename,"w+", encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(data)
 
 def read_file(filename):
-    path = "data/non-filtered/"
+    path = "data/filtered/"
     with open(path+filename,"r", encoding='utf-8') as f:
         return f.read().split("\n")
 
