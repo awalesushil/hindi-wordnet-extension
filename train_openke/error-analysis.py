@@ -35,40 +35,8 @@ model = NegativeSampling(
 	batch_size = train_dataloader.get_batch_size()
 )
 
-print("1-1")
-
 # dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_one/", "link")
-
-# test the model
-transe.load_checkpoint('./checkpoint/transe.ckpt')
-tester = Tester(model = transe, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-print("1-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_n/", "link")
-
-# test the model
-transe.load_checkpoint('./checkpoint/transe.ckpt')
-tester = Tester(model = transe, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-print("n-1")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_one/", "link")
-
-# test the model
-transe.load_checkpoint('./checkpoint/transe.ckpt')
-tester = Tester(model = transe, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-print("n-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_n/", "link")
+test_dataloader = TestDataLoader("./benchmarks/HIWN/", "link")
 
 # test the model
 transe.load_checkpoint('./checkpoint/transe.ckpt')
@@ -104,45 +72,15 @@ model = NegativeSampling(
 	batch_size = train_dataloader.get_batch_size()
 )
 
-print("1-1")
 
 # dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_one", "link")
+test_dataloader = TestDataLoader("./benchmarks/HIWN/", "link")
 
 # test the model
 transh.load_checkpoint('./checkpoint/transh.ckpt')
 tester = Tester(model = transh, data_loader = test_dataloader, use_gpu = True)
 tester.run_link_prediction(type_constrain = False)
 
-print("1-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_n", "link")
-
-# test the model
-transh.load_checkpoint('./checkpoint/transh.ckpt')
-tester = Tester(model = transh, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-print("n-1")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_one", "link")
-
-# test the model
-transh.load_checkpoint('./checkpoint/transh.ckpt')
-tester = Tester(model = transh, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-print("n-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_n", "link")
-
-# test the model
-transh.load_checkpoint('./checkpoint/transh.ckpt')
-tester = Tester(model = transh, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
 
 print("ComplEx")
 
@@ -173,43 +111,8 @@ model = NegativeSampling(
 	regul_rate = 1.0
 )
 
-print("1-1")
-
 # dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_one", "link")
-
-# test the model
-complEx.load_checkpoint('./checkpoint/complEx.ckpt')
-tester = Tester(model = complEx, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-
-print("1-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_n", "link")
-
-# test the model
-complEx.load_checkpoint('./checkpoint/complEx.ckpt')
-tester = Tester(model = complEx, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-
-print("n-1")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_one", "link")
-
-# test the model
-complEx.load_checkpoint('./checkpoint/complEx.ckpt')
-tester = Tester(model = complEx, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-
-print("n-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_n", "link")
+test_dataloader = TestDataLoader("./benchmarks/HIWN/", "link")
 
 # test the model
 complEx.load_checkpoint('./checkpoint/complEx.ckpt')
@@ -218,7 +121,6 @@ tester.run_link_prediction(type_constrain = False)
 
 
 print("DistMult")
-
 
 # dataloader for training
 train_dataloader = TrainDataLoader(
@@ -247,43 +149,8 @@ model = NegativeSampling(
 	regul_rate = 1.0
 )
 
-print("1-1")
-
 # dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_one", "link")
-
-# test the model
-distmult.load_checkpoint('./checkpoint/distmult.ckpt')
-tester = Tester(model = distmult, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-
-print("1-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/one_n", "link")
-
-# test the model
-distmult.load_checkpoint('./checkpoint/distmult.ckpt')
-tester = Tester(model = distmult, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-
-print("n-1")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_one", "link")
-
-# test the model
-distmult.load_checkpoint('./checkpoint/distmult.ckpt')
-tester = Tester(model = distmult, data_loader = test_dataloader, use_gpu = True)
-tester.run_link_prediction(type_constrain = False)
-
-
-print("n-n")
-
-# dataloader for test
-test_dataloader = TestDataLoader("./benchmarks/HIWN/n_n", "link")
+test_dataloader = TestDataLoader("./benchmarks/HIWN/", "link")
 
 # test the model
 distmult.load_checkpoint('./checkpoint/distmult.ckpt')
